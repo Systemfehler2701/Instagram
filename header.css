@@ -78,6 +78,7 @@ h1 {
 .profil-picture img {
     height: 35px;
     width: 35px;
+    object-fit: cover;
     border-radius: 50%;
     border: black solid 1px;
 }
