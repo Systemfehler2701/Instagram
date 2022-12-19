@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="img/photo-black.png">
+    <link rel="icon" type="image/x-icon" href="png/geographie.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="fonts.css">
     <script src="script.js"></script>
     <!-- CSS only
@@ -19,13 +20,24 @@
 <body>
     <header class="header">
         <h1>Kidsgram</h1>
+        <input>
+        <div class="navbar-wrapper">
+            <ul class="navbar">
+                <a href=""><img src="png/home.png"></a>
+                <a href=""><img src="png/paper-airplane.png"></a>
+                <a href=""><img src="png/pen.png"></a>
+                <a href=""><img src="png/compass.png"></a>
+                <a href=""><img src="png/heart.png"></a>
+                <a class="profil-picture" href=""><img src="png/woman.png"></a>
 
-        <div class="wrapper">
+            </ul>
+        </div>
+        <div class="switch-wrapper">
             <input onclick="dayOrNight()" type="checkbox" id="hide-checkbox">
             <label for="hide-checkbox" class="toggle">
-          <span class="toggle-button"> 
-          </span>          
-        </label>
+                <span class="toggle-button"> 
+                </span>          
+            </label>
         </div>
     </header>
 </body>
