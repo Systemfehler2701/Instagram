@@ -52,10 +52,17 @@ body {
     border: black solid 1px;
 }
 
-.profil-info {}
+.profil-location {
+    font-size: 14px;
+    color: gray;
+}
 
 .post-picture img {
     width: -webkit-fill-available;
+}
+
+.post-autorname {
+    font-weight: bold;
 }
 
 .post-menu {
@@ -68,10 +75,14 @@ body {
     cursor: pointer;
 }
 
+.post-menu img:hover {
+    transform: scale(1.1);
+}
+
 .post-comment {
     display: flex;
     align-items: center;
-    height: 40px;
+    height: fit-content;
     border-top: grey solid 1px;
 }
 
@@ -82,16 +93,21 @@ body {
     cursor: pointer;
 }
 
-.post-comment textarea {
+.post-comment div {
     background: none;
     border: none;
     outline: none;
     width: -webkit-fill-available;
-    max-height: 100px;
+    min-height: 40px;
+    height: fit-content;
+    max-height: 150px;
     font-family: 'Comic Sans MS';
     color: var(--color);
-    resize: none;
-    overflow: hidden;
+    overflow: auto;
+}
+
+.post-comment div:empty:before {
+    content: attr(data-placeholder);
 }
 
 .post-comment button {
